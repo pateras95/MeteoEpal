@@ -21,6 +21,13 @@
         android:layout_height="wrap_content"
         android:text="Button"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="504dp" />
+        tools:layout_editor_absoluteY="504dp"
+        tools:ignore="MissingConstraints" />
+
+    <WebView
+        android:id="@+id/WvId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BrowserActivity" />
 
 </android.support.constraint.ConstraintLayout>
