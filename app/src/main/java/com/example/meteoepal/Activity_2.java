@@ -1,10 +1,10 @@
 package com.example.meteoepal;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_2 extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class Activity_2 extends AppCompatActivity {
         textView = (TextView)findViewById(R.id.globalText);
         textView.setText("Gamiese 2");
 
-        webView = (WebView)findViewById(R.id.WvId);
-        webView.loadUrl("https://1epal-chalk.eyv.sch.gr/");
+//        webView = (WebView)findViewById(R.id.WvId);
+//        webView.loadUrl("https://1epal-chalk.eyv.sch.gr/");
     }
 }
