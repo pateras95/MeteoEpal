@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="340dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonAtalanti"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="ΕΠΑΛ ΑΤΑΛΑΝΤΗΣ"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+            <Button
+                android:id="@+id/buttonKarpenisi"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="ΕΠΑΛ ΚΑΡΠΕΝΗΣΙΟΥ"
+                android:textColor="@color/white"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonKaristos"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="ΕΠΑΛ ΚΑΡΥΣΤΟΥ"
+                android:textColor="@color/white"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+            <Button
+                android:id="@+id/buttonKerkira"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="1 ΕΠΑΛ ΚΕΡΚΥΡΑΣ"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonLamia"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="1 ΕΠΑΛ ΛΑΜΙΑΣ"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+            <Button
+                android:id="@+id/buttonMarakomi"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="ΕΠΑΛ ΜΑΡΑΚΩΜΗΣ"
+                android:textColor="@color/white"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonXalkida"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ"
+                android:textColor="@color/white"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+            <Button
+                android:id="@+id/buttonPsaxna"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="ΕΠΑΛ ΨΑΧΝΩΝ"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="673dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
