@@ -5,4 +5,14 @@
         android:enabled="true"
         android:icon="@drawable/home_icon"
         android:title="Αρχική"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Αρχική"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Αρχική"/>
 </menu>
