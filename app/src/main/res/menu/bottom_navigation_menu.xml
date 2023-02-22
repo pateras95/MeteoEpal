@@ -3,16 +3,16 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:icon="@drawable/home_icon"
-        android:title="Αρχική"/>
+        android:icon="@drawable/ic_baseline_cloud_24"
+        android:title="@string/weather"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/home_icon"
-        android:title="Αρχική"/>
+        android:title="@string/home"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:icon="@drawable/home_icon"
-        android:title="Αρχική"/>
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/info"/>
 </menu>

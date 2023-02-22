@@ -14,16 +14,13 @@
         android:layout_marginBottom="380dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"/>
+        android:layout_marginRight="25dp" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        android:id="@+id/firstLinear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginBottom="57dp"
-        android:layout_marginTop="340dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +35,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:text="ΕΠΑΛ ΑΤΑΛΑΝΤΗΣ"
+                android:text="@string/atalanti"
                 android:background="@drawable/home_school_buttons_o1"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_launcher_background" />
@@ -75,7 +72,8 @@
                 android:textColor="@color/white"
                 android:background="@drawable/home_school_buttons_o2"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/ic_launcher_background"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/buttonKerkira"
@@ -134,26 +132,27 @@
                 android:id="@+id/buttonXalkida"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ"
-                android:textColor="@color/white"
                 android:background="@drawable/home_school_buttons_o2"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/ic_launcher_background"
+                android:text="2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/buttonPsaxna"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="ΕΠΑΛ ΨΑΧΝΩΝ"
                 android:background="@drawable/home_school_buttons_o1"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/ic_launcher_background"
+                android:text="ΕΠΑΛ ΨΑΧΝΩΝ" />
 
         </LinearLayout>
 
