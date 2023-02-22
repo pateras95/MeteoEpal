@@ -2,14 +2,20 @@ package com.example.meteoepal;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Pair;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
@@ -37,6 +43,26 @@ public class ActivityHome extends AppCompatActivity {
         map.setTileSource(TileSourceFactory.MAPNIK);
         map.getController().setZoom(8.0);
 
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.weather_btn:
+                        Intent intent = new Intent(getApplicationContext(), Activity_2.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.home_btn:
+                        intent = new Intent(getApplicationContext(), ActivityHome.class);
+                        startActivity(intent);;
+                        break;
+                    case R.id.info_btn:
+                        Toast.makeText(ActivityHome.this, "Nearby", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
         map.setMultiTouchControls(true);
 
