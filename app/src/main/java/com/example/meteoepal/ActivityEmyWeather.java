@@ -48,7 +48,7 @@ public class ActivityEmyWeather extends AppCompatActivity {
 
 
 
-        webView = (WebView)findViewById(R.id.webViewFrame);
+        webView = (WebView)findViewById(R.id.schoolWeatherView);
         webView.loadUrl("http://www.emy.gr/emy/el/");
     }
 }
