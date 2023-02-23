@@ -39,8 +39,8 @@ public class ActivityEmyWeather extends AppCompatActivity {
                         startActivity(intent);;
                         break;
                     case R.id.info_btn:
-                        Toast.makeText(getApplicationContext(), "Nearby", Toast.LENGTH_SHORT).show();
-                        break;
+                        intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
+                        startActivity(intent);;
                 }
                 return true;
             }
@@ -48,7 +48,7 @@ public class ActivityEmyWeather extends AppCompatActivity {
 
 
 
-        webView = (WebView)findViewById(R.id.schoolWeatherView);
+        webView = (WebView)findViewById(R.id.webViewFrame);
         webView.loadUrl("http://www.emy.gr/emy/el/");
     }
 }
