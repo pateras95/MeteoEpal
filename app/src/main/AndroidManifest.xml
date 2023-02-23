@@ -27,6 +27,7 @@
         </activity>
         <activity android:name=".ActivityHome"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ActivityAtalanti"></activity>
         <activity android:name=".ActivityEmyWeather"> </activity>
     </application>
 

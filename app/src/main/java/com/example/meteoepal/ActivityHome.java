@@ -58,8 +58,8 @@ public class ActivityHome extends AppCompatActivity {
                         startActivity(intent);;
                         break;
                     case R.id.info_btn:
-                        Toast.makeText(ActivityHome.this, "Nearby", Toast.LENGTH_SHORT).show();
-                        break;
+                        intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
+                        startActivity(intent);;
                 }
                 return true;
             }
