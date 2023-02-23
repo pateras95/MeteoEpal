@@ -8,7 +8,8 @@
     <org.osmdroid.views.MapView
         android:id="@+id/mapView"
         android:layout_width="wrap_content"
-        android:layout_height="300dp" />
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp" />
 
     <LinearLayout
         android:id="@+id/firstLinear"
@@ -160,8 +161,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation_menu"
         app:itemIconTint="@android:color/black"
-        app:itemTextColor="@android:color/black" />
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>
