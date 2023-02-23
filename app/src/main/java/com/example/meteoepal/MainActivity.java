@@ -20,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        next = (Button)findViewById(R.id.buttonNext);
-        next.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Activity_2.class));
-            }
-        });
-
-        textView = (TextView)findViewById(R.id.globalText);
-        textView.setText("Gamiese 1");
+//        next = (Button)findViewById(R.id.buttonNext);
+//        next.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, ActivityEmyWeather.class));
+//            }
+//        });
+//
+//        textView = (TextView)findViewById(R.id.globalText);
+//        textView.setText("Gamiese 1");
 
 //        webView = (WebView)findViewById(R.id.WvId);
 //        webView.loadUrl("http://www.emy.gr/emy/el/");

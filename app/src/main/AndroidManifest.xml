@@ -27,7 +27,7 @@
         </activity>
         <activity android:name=".ActivityHome"></activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Activity_2"> </activity>
+        <activity android:name=".ActivityEmyWeather"> </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,5 @@
 package com.example.meteoepal;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -45,12 +44,13 @@ public class ActivityHome extends AppCompatActivity {
         map.getController().setZoom(8.0);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home_btn);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.weather_btn:
-                        Intent intent = new Intent(getApplicationContext(), Activity_2.class);
+                        Intent intent = new Intent(getApplicationContext(), ActivityEmyWeather.class);
                         startActivity(intent);
                         break;
                     case R.id.home_btn:

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Activity_2 extends AppCompatActivity {
+public class ActivityEmyWeather extends AppCompatActivity {
 
     private TextView textView;
     private WebView webView;
@@ -24,12 +24,13 @@ public class Activity_2 extends AppCompatActivity {
         setContentView(R.layout.activity_weather);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.weather_btn);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.weather_btn:
-                        Intent intent = new Intent(getApplicationContext(), Activity_2.class);
+                        Intent intent = new Intent(getApplicationContext(), ActivityEmyWeather.class);
                         startActivity(intent);
                         break;
                     case R.id.home_btn:
@@ -44,10 +45,8 @@ public class Activity_2 extends AppCompatActivity {
             }
         });
 
-        textView = (TextView)findViewById(R.id.globalText);
-        textView.setText("Gamiese 2");
 
-//        webView = (WebView)findViewById(R.id.WvId);
-//        webView.loadUrl("https://1epal-chalk.eyv.sch.gr/");
+        webView = (WebView)findViewById(R.id.webViewFrame);
+        webView.loadUrl("http://www.emy.gr/emy/el/");
     }
 }
