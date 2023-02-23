@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ActivityAtalanti">
 
-    <WebView
-        android:id="@+id/schoolWeatherView"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_below="@id/schoolName" />
-
     <TextView
         android:id="@+id/schoolName"
         android:layout_width="match_parent"
@@ -24,13 +18,13 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
         android:layout_above="@id/bottom_navigation"
-        android:layout_below="@id/schoolWeatherView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-127dp">
+        android:layout_below="@id/schoolName">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -60,15 +54,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/slider"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/atalantiText"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/scrolltext"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardUseCompatPadding="true">
+
+                <WebView
+                    android:id="@+id/schoolWeatherView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true" />
+            </androidx.cardview.widget.CardView>
         </RelativeLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
