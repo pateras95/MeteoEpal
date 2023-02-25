@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">MeteoEpal</string>
+    <string name="tapToClose">Χ Κλείσιμο</string>
     <string name="weather">Kαιρός E.M.Y</string>
     <string name="atalanti">ΕΠΑΛ ΑΤΑΛΑΝΤΗΣ</string>
+    <string name="karpenisi">ΕΠΑΛ ΚΑΡΠΕΝΗΣΙΟΥ</string>
+    <string name="karistos">ΕΠΑΛ ΚΑΡΥΣΤΟΥ</string>
+    <string name="kerkira">1 ΕΠΑΛ ΚΕΡΚΥΡΑΣ</string>
+    <string name="lamia">1 ΕΠΑΛ ΛΑΜΙΑΣ</string>
+    <string name="marakomi">ΕΠΑΛ ΜΑΡΑΚΩΜΗΣ</string>
+    <string name="xalkida">2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ</string>
+    <string name="psaxna">ΕΠΑΛ ΨΑΧΝΩΝ</string>
     <string name="home">Αρχική</string>
     <string name="info">Πληροφορίες</string>
     <string name="atalantiText">

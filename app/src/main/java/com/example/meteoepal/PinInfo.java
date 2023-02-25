@@ -1,10 +1,9 @@
 package com.example.meteoepal;
 
-import android.util.Pair;
+import android.text.method.LinkMovementMethod;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-
-import org.osmdroid.util.GeoPoint;
 
 // This a helper class to store info for each School, in order to attach them to the Pin
 public class PinInfo{
@@ -16,7 +15,6 @@ public class PinInfo{
         setSchoolName(theName);
         moreInf = 1;
     }
-
     public void setSchoolName(String schoolName) {
         this.schoolName = schoolName;
     }
