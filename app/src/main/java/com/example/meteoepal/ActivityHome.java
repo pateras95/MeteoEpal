@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+//import androidx.room.jarjarred.org.antlr.v4.runtime.misc.Triple;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,7 +36,7 @@ import org.osmdroid.views.overlay.infowindow.MarkerInfoWindow;
 import java.util.ArrayList;
 import java.util.Vector;
 
-import kotlin.Triple;
+//import kotlin.Triple;
 
 
 public class ActivityHome extends AppCompatActivity {
@@ -118,7 +119,7 @@ public class ActivityHome extends AppCompatActivity {
     }
 
     private void setMapPins() {
-        Vector<Triple<GeoPoint, String, String>> geoPoints = new Vector<>();
+//        Vector<Triple<GeoPoint, String, String>> geoPoints = new Vector<>();
         //doumou: if we keep the CustomMarkerInfoWindow implementation delete PinInfo class
 //        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.65323541747318, 22.99672185854556), new PinInfo("Epal Atalantis")));  // epal atalantis
 //        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.91434755941711, 21.78808330109529), new PinInfo("Epal Karpenisi")));  // epal Karpenisi
@@ -128,28 +129,28 @@ public class ActivityHome extends AppCompatActivity {
 //        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.952468170983934, 22.1213511500289), new PinInfo("Epal Marakomi")));   // epal Marakomi
 //        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.45802788501172, 23.59682885371187), new PinInfo("Epal Xalkida")));    // epal Xalkida
 //        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.57270997805984, 23.63739658600231), new PinInfo("Epal Psaxna")));     // epal Psaxna
-
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.65323541747318, 22.99672185854556),getString(R.string.atalanti), "https://www.google.com/maps/place/38%C2%B039'11.7%22N+22%C2%B059'48.2%22E/@38.6532354,22.9945332,17z/data=!3m1!4b1!4m4!3m3!8m2!3d38.6532354!4d22.9967219"));  // epal atalantis
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.91434755941711, 21.78808330109529),getString(R.string.karpenisi), "https://www.google.com/maps?client=firefox-b-d&q=38.91434755941711,+21.78808330109529&um=1&ie=UTF-8&sa=X&ved=2ahUKEwicq8Lbs7H9AhXNm6QKHSZQC40Q_AUoAnoECAEQBA"));  // epal Karpenisi
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.021995410170824, 24.4226906500078),getString(R.string.karistos), "https://www.google.com/maps/place/38%C2%B001'19.2%22N+24%C2%B025'21.7%22E/@38.0219715,24.422044,18.38z/data=!4m4!3m3!8m2!3d38.0219954!4d24.4226907"));   // epal Karistos
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(39.62433832411041, 19.90945654811451),getString(R.string.kerkira), "https://www.google.com/maps/place/39%C2%B037'27.6%22N+19%C2%B054'34.0%22E/@39.624287,19.9086755,18.08z/data=!4m4!3m3!8m2!3d39.6243383!4d19.9094565"));    // epal Kerkira
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.920316991828095, 22.4242029097274),getString(R.string.lamia), "https://www.google.com/maps?client=firefox-b-d&q=38.920316991828095,+22.4242029097274&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjT97GJtLH9AhVS2qQKHZCsBqkQ_AUoAnoECAEQBA"));      // epal Lamia
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.952468170983934, 22.1213511500289),getString(R.string.marakomi), "https://www.google.com/maps?client=firefox-b-d&q=38.952468170983934,+22.1213511500289&um=1&ie=UTF-8&sa=X&ved=2ahUKEwikrf-QtLH9AhU1JMUKHe7VAdUQ_AUoAnoECAEQBA"));   // epal Marakomi
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.45802788501172, 23.59682885371187),getString(R.string.xalkida), "https://www.google.com/maps?client=firefox-b-d&q=38.45802788501172,+23.59682885371187&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiotemZtLH9AhXGjqQKHQ0ZAZ8Q_AUoAnoECAIQBA"));    // epal Xalkida
-        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.57270997805984, 23.63739658600231),getString(R.string.psaxna), "https://www.google.com/maps?client=firefox-b-d&q=38.57270997805984,+23.63739658600231&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi8rNOhtLH9AhUP16QKHTfyCMEQ_AUoAnoECAEQBA"));     // epal Psaxna
-        for (Integer i = 0; i < geoPoints.size(); i++)
-        {
-            Marker startMarker = new Marker(map);
-            CustomMarkerInfoWindow customWindow = new CustomMarkerInfoWindow(map, geoPoints.get(i).getSecond(), geoPoints.get(i).getThird());
-            startMarker.setIcon(getDrawable(R.drawable.pin));
-            startMarker.setInfoWindow(customWindow);
-            // doumou: if we keep CustomMarkerInfoWindow delete bellow 2 lines
-            //startMarker.setImage(getDrawable(R.drawable.pininfo)); // for inside the cloud if default window
-            //startMarker.setTitle(geoPoints.get(i).second.toString()); // for default window
-            startMarker.setPosition(geoPoints.get(i).getFirst());
-            startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_CENTER);
-            map.getOverlays().add(startMarker);
-        }
+//
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.65323541747318, 22.99672185854556),getString(R.string.atalanti), "https://www.google.com/maps/place/38%C2%B039'11.7%22N+22%C2%B059'48.2%22E/@38.6532354,22.9945332,17z/data=!3m1!4b1!4m4!3m3!8m2!3d38.6532354!4d22.9967219"));  // epal atalantis
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.91434755941711, 21.78808330109529),getString(R.string.karpenisi), "https://www.google.com/maps?client=firefox-b-d&q=38.91434755941711,+21.78808330109529&um=1&ie=UTF-8&sa=X&ved=2ahUKEwicq8Lbs7H9AhXNm6QKHSZQC40Q_AUoAnoECAEQBA"));  // epal Karpenisi
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.021995410170824, 24.4226906500078),getString(R.string.karistos), "https://www.google.com/maps/place/38%C2%B001'19.2%22N+24%C2%B025'21.7%22E/@38.0219715,24.422044,18.38z/data=!4m4!3m3!8m2!3d38.0219954!4d24.4226907"));   // epal Karistos
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(39.62433832411041, 19.90945654811451),getString(R.string.kerkira), "https://www.google.com/maps/place/39%C2%B037'27.6%22N+19%C2%B054'34.0%22E/@39.624287,19.9086755,18.08z/data=!4m4!3m3!8m2!3d39.6243383!4d19.9094565"));    // epal Kerkira
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.920316991828095, 22.4242029097274),getString(R.string.lamia), "https://www.google.com/maps?client=firefox-b-d&q=38.920316991828095,+22.4242029097274&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjT97GJtLH9AhVS2qQKHZCsBqkQ_AUoAnoECAEQBA"));      // epal Lamia
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.952468170983934, 22.1213511500289),getString(R.string.marakomi), "https://www.google.com/maps?client=firefox-b-d&q=38.952468170983934,+22.1213511500289&um=1&ie=UTF-8&sa=X&ved=2ahUKEwikrf-QtLH9AhU1JMUKHe7VAdUQ_AUoAnoECAEQBA"));   // epal Marakomi
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.45802788501172, 23.59682885371187),getString(R.string.xalkida), "https://www.google.com/maps?client=firefox-b-d&q=38.45802788501172,+23.59682885371187&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiotemZtLH9AhXGjqQKHQ0ZAZ8Q_AUoAnoECAIQBA"));    // epal Xalkida
+//        geoPoints.add(new Triple<GeoPoint, String, String>(new GeoPoint(38.57270997805984, 23.63739658600231),getString(R.string.psaxna), "https://www.google.com/maps?client=firefox-b-d&q=38.57270997805984,+23.63739658600231&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi8rNOhtLH9AhUP16QKHTfyCMEQ_AUoAnoECAEQBA"));     // epal Psaxna
+//        for (Integer i = 0; i < geoPoints.size(); i++)
+//        {
+//            Marker startMarker = new Marker(map);
+//            CustomMarkerInfoWindow customWindow = new CustomMarkerInfoWindow(map, geoPoints.get(i).getSecond(), geoPoints.get(i).getThird());
+//            startMarker.setIcon(getDrawable(R.drawable.pin));
+//            startMarker.setInfoWindow(customWindow);
+//            // doumou: if we keep CustomMarkerInfoWindow delete bellow 2 lines
+//            //startMarker.setImage(getDrawable(R.drawable.pininfo)); // for inside the cloud if default window
+//            //startMarker.setTitle(geoPoints.get(i).second.toString()); // for default window
+//            startMarker.setPosition(geoPoints.get(i).getFirst());
+//            startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_CENTER);
+//            map.getOverlays().add(startMarker);
+//        }
     }
 //class not in another file because we need startActivity() for hyperLink
     public class CustomMarkerInfoWindow extends MarkerInfoWindow {
@@ -174,7 +175,7 @@ public class ActivityHome extends AppCompatActivity {
                     intent.setAction(Intent.ACTION_VIEW);
                     intent.addCategory(Intent.CATEGORY_BROWSABLE);
                     intent.setData(Uri.parse(location));
-                    startActivity(intent);
+//                    startActivity(intent);
                 }
             });
         }
@@ -186,3 +187,4 @@ public class ActivityHome extends AppCompatActivity {
         }
     }
 }
+
