@@ -7,9 +7,27 @@
     <string name="karistos">ΕΠΑΛ ΚΑΡΥΣΤΟΥ</string>
     <string name="kerkira">1 ΕΠΑΛ ΚΕΡΚΥΡΑΣ</string>
     <string name="lamia">1 ΕΠΑΛ ΛΑΜΙΑΣ</string>
-    <string name="marakomi">ΕΠΑΛ ΜΑΡΑΚΩΜΗΣ</string>
+    <string name="makrakomi">ΕΠΑΛ ΜΑΚΡΑΚΩΜΗΣ</string>
     <string name="xalkida">2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ</string>
-    <string name="psaxna">ΕΠΑΛ ΨΑΧΝΩΝ</string>
+    <string name="dionisos">1 ΕΠΑΛ ΔΙΟΝΥΣΟΥ</string>
+    <string name="dimhrakleio">15 ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ \n ΗΡΑΚΛΕΙΟΥ</string>
+    <string name="thiba">ΕΠΑΛ ΘΗΒΑΣ</string>
+    <string name="kesariani">ΕΠΑΛ ΚΕΣΑΡΙΑΝΗΣ</string>
+    <string name="peiramthesallonikis">ΠΕΙΡΑΜΑΤΙΚΟ ΣΧΟΛΕΙΟ \n ΘΕΣΣΑΛΟΝΙΚΗΣ</string>
+
+    <string name="atalantiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.653456036158786,+22.99719271998704&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwipl86tsrv9AhWNjaQKHauEBigQ_AUoAnoECAEQBA</string>
+    <string name="karpenisiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.91454545946067,+21.78850553003706&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiElu_Msrv9AhWH2qQKHd5CAA8Q_AUoAnoECAIQBA</string>
+    <string name="karistosURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.02207991394976,+24.42263701299908&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjkkLXasrv9AhUrsKQKHQvwC-gQ_AUoAnoECAEQBA</string>
+    <string name="kerkiraURL">https://www.google.com/maps?client=firefox-b-d&amp;q=39.6244072151634,+19.91026709786767&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiBmOH6sbv9AhUrMuwKHbraAL4Q_AUoAnoECAEQBA</string>
+    <string name="lamiaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.92042606103356,+22.423592718589948&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiS9ZiEsrv9AhVnMOwKHa35DKUQ_AUoAnoECAEQBA</string>
+    <string name="makrakomiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.952651702649774,+22.121769579540636&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjBzM3psrv9AhUssKQKHe0NAZUQ_AUoAnoECAEQBA</string>
+    <string name="xalkidaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.45807095740107,+23.597087048916933&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjim9GRsrv9AhWYtKQKHYw4DpYQ_AUoAnoECAEQBA</string>
+    <string name="dionisosURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.122276901851336,+23.864931531423043&amp;dlnr=1&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi6womer7v9AhVeiP0HHSn_D6kQ_AUoAnoECAEQBA</string>
+    <string name="dimhrakleioURL">https://www.google.com/maps?client=firefox-b-d&amp;q=35.3226004214979,+25.125163545979387&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiZs-ydsrv9AhWLOewKHcjhBxEQ_AUoAnoECAEQBA</string>
+    <string name="thibaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.329990782307505,+23.336070776829448&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwil0O-2srv9AhUMjqQKHbn3AVwQ_AUoAnoECAEQBA</string>
+    <string name="kesarianiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=37.965796476805586,+23.757893708772837&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi7kYXEsrv9AhUNwAIHHRgzBvcQ_AUoAnoECAEQBA</string>
+    <string name="peiramthesallonikisURL">https://www.google.com/maps?client=firefox-b-d&amp;q=40.741117628421776,+22.936559696451045&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjG44X2srv9AhWZ_7sIHZsdD4wQ_AUoAnoECAIQBA</string>
+
     <string name="home">Αρχική</string>
     <string name="info">Πληροφορίες</string>
     <string name="atalantiText">

@@ -12,6 +12,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
         app:cardCornerRadius="300dp"
+        android:layout_above="@+id/firstLinear"
+        app:layout_constraintBottom_toTopOf="@+id/firstLinear"
         app:layout_constraintTop_toBottomOf="parent">
 
         <org.osmdroid.views.MapView
@@ -25,7 +27,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_navigation"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@+id/mapView"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonKriti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background"
+                android:text="@string/dimhrakleio" />
+
+            <Button
+                android:id="@+id/buttonThessaloniki"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background"
+                android:text="@string/peiramthesallonikis"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/buttonThiba"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background"
+                android:text="@string/thiba" />
+
+            <Button
+                android:id="@+id/buttonKesariani"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_background"
+                android:text="@string/kesariani"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +107,7 @@
             <Button
                 android:id="@+id/buttonAtalanti"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -48,7 +119,7 @@
             <Button
                 android:id="@+id/buttonKarpenisi"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -70,7 +141,7 @@
                 android:id="@+id/buttonKaristos"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -83,7 +154,7 @@
             <Button
                 android:id="@+id/buttonKerkira"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -103,7 +174,7 @@
             <Button
                 android:id="@+id/buttonLamia"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -115,14 +186,14 @@
             <Button
                 android:id="@+id/buttonMarakomi"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/home_school_buttons_o2"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_launcher_background"
-                android:text="@string/marakomi"
+                android:text="@string/makrakomi"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -136,7 +207,7 @@
             <Button
                 android:id="@+id/buttonXalkida"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -147,17 +218,17 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/buttonPsaxna"
+                android:id="@+id/buttonDionisos"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/home_school_buttons_o1"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_launcher_background"
-                android:text="@string/psaxna" />
+                android:text="@string/dionisos" />
 
         </LinearLayout>
 
