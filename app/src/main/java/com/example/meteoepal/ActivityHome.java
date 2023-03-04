@@ -77,10 +77,10 @@ public class ActivityHome extends AppCompatActivity {
         });
         map.setMultiTouchControls(true);
 //        doumou: The following doesn't look ok on circle map, delete them?
-//        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
-//        CompassOverlay compassOverlay = new CompassOverlay(this, map);
-//        compassOverlay.enableCompass();
-//        map.getOverlays().add(compassOverlay);
+        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
+        CompassOverlay compassOverlay = new CompassOverlay(this, map);
+        compassOverlay.enableCompass();
+        map.getOverlays().add(compassOverlay);
 
         GeoPoint MapCenterPointOnStart = new GeoPoint(38.83438097933947, 21.774962757282207);
         setMapPins();
@@ -133,22 +133,12 @@ public class ActivityHome extends AppCompatActivity {
         geoPoints.add(new Pair<>(new GeoPoint(38.952651702649774, 22.121769579540636), new Pair<String, String>(getString(R.string.makrakomi), getString(R.string.makrakomiURL))));// Epal Makrakomis
         geoPoints.add(new Pair<>(new GeoPoint(40.741117628421776, 22.936559696451045), new Pair<String, String>(getString(R.string.peiramthesallonikis), getString(R.string.peiramthesallonikisURL)))); // Peiramatiko thesallonikhs
 
-
-        //doumou: if we keep the CustomMarkerInfoWindow implementation delete PinInfo class
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.65323541747318, 22.99672185854556), new PinInfo("Epal Atalantis")));  // epal atalantis
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.91434755941711, 21.78808330109529), new PinInfo("Epal Karpenisi")));  // epal Karpenisi
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.021995410170824, 24.4226906500078), new PinInfo("Epal Karistos")));   // epal Karistos
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(39.62433832411041, 19.90945654811451), new PinInfo("Epal Kerkira")));    // epal Kerkira
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.920316991828095, 22.4242029097274), new PinInfo("Epal Lamia")));      // epal Lamia
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.952468170983934, 22.1213511500289), new PinInfo("Epal Marakomi")));   // epal Marakomi
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.45802788501172, 23.59682885371187), new PinInfo("Epal Xalkida")));    // epal Xalkida
-//        geoPoints.add(new Pair<GeoPoint, PinInfo>(new GeoPoint(38.57270997805984, 23.63739658600231), new PinInfo("Epal Psaxna")));     // epal Psaxna
-
         for (Integer i = 0; i < geoPoints.size(); i++)
         {
             Marker startMarker = new Marker(map);
             CustomMarkerInfoWindow customWindow = new CustomMarkerInfoWindow(map, geoPoints.get(i).second.first, geoPoints.get(i).second.second);
-            startMarker.setIcon(getDrawable(R.drawable.pin));
+            startMarker.setIcon(getDrawable(R.drawable.mappin));
+
             startMarker.setInfoWindow(customWindow);
 
             // doumou: if we keep CustomMarkerInfoWindow delete bellow 2 lines

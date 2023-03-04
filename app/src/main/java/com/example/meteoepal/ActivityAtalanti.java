@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,7 +26,7 @@ import java.util.ArrayList;
         protected void onCreate(Bundle savedInstanceState) {
             overridePendingTransition(0, 0);
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_atalanti);
+            setContentView(R.layout.activity_info_schools);
 
             BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
             bottomNavigationView.setSelectedItemId(R.id.home_btn);
