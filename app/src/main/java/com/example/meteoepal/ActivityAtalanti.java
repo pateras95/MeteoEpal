@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -66,6 +68,7 @@ import java.util.ArrayList;
             schoolName.setText("Επάλ Αταλάντης");
 
             schoolWebView = (WebView)findViewById(R.id.schoolWeatherView);
+            schoolWebView.setWebViewClient(new WebViewClient());
             schoolWebView.loadUrl("http://users.sch.gr/labrinth/weather/");
         }
     }

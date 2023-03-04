@@ -3,6 +3,8 @@ package com.example.meteoepal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
@@ -49,6 +51,9 @@ public class ActivityEmyWeather extends AppCompatActivity {
 
 
         webView = (WebView)findViewById(R.id.webViewFrame);
+        webView.setWebViewClient(new WebViewClient());
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("http://www.emy.gr/emy/el/");
     }
 }
