@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MeteoEpal</string>
     <string name="tapToClose">Χ Κλείσιμο</string>
+    <string name="callSchool">Επικοινωνία:</string>
     <string name="weather">Kαιρός E.M.Y</string>
     <string name="atalanti">ΕΠΑΛ ΑΤΑΛΑΝΤΗΣ</string>
     <string name="karpenisi">ΕΠΑΛ ΚΑΡΠΕΝΗΣΙΟΥ</string>
@@ -14,6 +15,23 @@
     <string name="thiba">ΕΠΑΛ ΘΗΒΑΣ</string>
     <string name="kesariani">ΕΠΑΛ ΚΕΣΑΡΙΑΝΗΣ</string>
     <string name="peiramthesallonikis">ΠΕΙΡΑΜΑΤΙΚΟ ΣΧΟΛΕΙΟ \n ΘΕΣΣΑΛΟΝΙΚΗΣ</string>
+
+
+
+    <string name="atalantiPhone">tel:1</string>
+    <string name="karpenisiPhone">tel:2</string>
+    <string name="karistosPhone">tel:3</string>
+    <string name="kerkiraPhone">tel:4</string>
+    <string name="lamiaPhone">tel:5</string>
+    <string name="makrakomiPhone">tel:6</string>
+    <string name="xalkidaPhone">tel:7</string>
+    <string name="dionisosPhone">tel:8</string>
+    <string name="dimhrakleioPhone">tel:9</string>
+    <string name="thibaPhone">tel:10</string>
+    <string name="kesarianiPhone">tel:11</string>
+    <string name="peiramthesallonikisPhone">tel:12</string>
+
+
 
     <string name="atalantiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.653456036158786,+22.99719271998704&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwipl86tsrv9AhWNjaQKHauEBigQ_AUoAnoECAEQBA</string>
     <string name="karpenisiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.91454545946067,+21.78850553003706&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiElu_Msrv9AhWH2qQKHd5CAA8Q_AUoAnoECAIQBA</string>

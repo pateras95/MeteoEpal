@@ -33,6 +33,28 @@
                 android:layout_gravity="right"
                 android:layout_weight="0" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView android:id="@+id/bubble_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:maxEms="17"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Telephone" />
+            <Button android:id="@+id/bubble_telephone_button"
+                android:background="@drawable/phone_image"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_weight="0" />
+        </LinearLayout>
+
         <TextView android:id="@+id/bubble_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
