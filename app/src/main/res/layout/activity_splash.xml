@@ -12,13 +12,13 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#03A9F4" >
+        android:background="@color/dark_second">
 
         <ImageView
             android:id="@+id/splashImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/splash"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/app_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
