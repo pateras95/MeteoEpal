@@ -3,12 +3,10 @@ package com.example.meteoepal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,19 +36,20 @@ public class ActivityEmyWeather extends AppCompatActivity {
                         break;
                     case R.id.home_btn:
                         intent = new Intent(getApplicationContext(), ActivityHome.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                         break;
                     case R.id.info_btn:
                         intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                 }
                 return true;
             }
         });
 
 
-
-        webView = (WebView)findViewById(R.id.webViewFrame);
+        webView = (WebView) findViewById(R.id.webViewFrame);
         webView.setWebViewClient(new WebViewClient());
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);

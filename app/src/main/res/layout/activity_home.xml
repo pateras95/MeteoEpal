@@ -12,29 +12,28 @@
         android:id="@+id/headerText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginLeft="17dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/chalkboard_color"
+        android:layout_marginRight="17dp"
         android:text="@string/home_header"
-        android:textAlignment="center"
-        android:textColor="@color/dark_second"
-        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_baseline_add_location_alt_24"
         tools:ignore="TextContrastCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewMap"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/scroll"
+        android:layout_height="320dp"
         android:layout_below="@id/headerText"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="50dp">
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp">
 
         <org.osmdroid.views.MapView
             android:id="@+id/mapView"
@@ -47,19 +46,23 @@
         android:id="@+id/schools_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/scroll"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@id/cardViewMap"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/btns_header"
-        android:textAlignment="center"
-        android:textColor="@color/btnTextColor"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondary"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <ScrollView
         android:id="@id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="220dp"
         android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/schools_text"
         android:background="@color/primary">
 
         <LinearLayout
@@ -174,7 +177,6 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
                 android:padding="10dp"
                 android:singleLine="true"
-                android:src="@drawable/ic_launcher_background"
                 android:text="@string/atalanti"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -183,129 +185,167 @@
                 android:textStyle="bold"
                 tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonKarpenisi"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/karpenisi"-->
-            <!--                    android:textColor="@color/primary_text" />-->
+            <Button
+                android:id="@+id/buttonKarpenisi"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/karpenisi"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--            </LinearLayout>-->
+            <Button
+                android:id="@+id/buttonKaristos"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/karistos"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:orientation="horizontal"-->
-            <!--                android:padding="10dp">-->
+            <Button
+                android:id="@+id/buttonKerkira"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/kerkira"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonKaristos"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/karistos"-->
-            <!--                    android:textColor="@color/primary_text" />-->
+            <Button
+                android:id="@+id/buttonLamia"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/lamia"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonKerkira"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/kerkira"-->
-            <!--                    android:textColor="@color/primary_text" />-->
+            <Button
+                android:id="@+id/buttonMarakomi"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/makrakomi"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--            </LinearLayout>-->
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:orientation="horizontal"-->
-            <!--                android:padding="10dp">-->
+            <Button
+                android:id="@+id/buttonXalkida"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/xalkida"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonLamia"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/lamia"-->
-            <!--                    android:textColor="@color/white" />-->
-
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonMarakomi"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/makrakomi"-->
-            <!--                    android:textColor="@color/primary_text" />-->
-
-            <!--            </LinearLayout>-->
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:orientation="horizontal"-->
-            <!--                android:padding="10dp">-->
-
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonXalkida"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/xalkida"-->
-            <!--                    android:textColor="@color/primary_text" />-->
-
-            <!--                <Button-->
-            <!--                    android:id="@+id/buttonDionisos"-->
-            <!--                    style="?android:attr/buttonBarButtonStyle"-->
-            <!--                    android:layout_width="0dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:layout_marginLeft="10dp"-->
-            <!--                    android:layout_marginRight="10dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/chalkboard_color"-->
-            <!--                    android:contentDescription="@string/app_name"-->
-            <!--                    android:src="@drawable/ic_launcher_background"-->
-            <!--                    android:text="@string/dionisos"-->
-            <!--                    android:textColor="@color/primary_text" />-->
-
-            <!--            </LinearLayout>-->
+            <Button
+                android:id="@+id/buttonDionisos"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:src="@drawable/ic_launcher_background"
+                android:text="@string/dionisos"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
         </LinearLayout>
     </ScrollView>
 

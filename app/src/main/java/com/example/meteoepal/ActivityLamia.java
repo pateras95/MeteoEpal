@@ -41,11 +41,13 @@ public class ActivityLamia extends AppCompatActivity {
                         break;
                     case R.id.home_btn:
                         intent = new Intent(getApplicationContext(), ActivityHome.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                         break;
                     case R.id.info_btn:
                         intent = new Intent(getApplicationContext(), ActivityLamia.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                 }
                 return true;
             }
@@ -63,10 +65,10 @@ public class ActivityLamia extends AppCompatActivity {
         sliderView.setAutoCycle(true);
         sliderView.startAutoCycle();
 
-        schoolName = (TextView)findViewById(R.id.schoolName);
+        schoolName = (TextView) findViewById(R.id.schoolName);
         schoolName.setText("Επάλ Αταλάντης");
 
-        schoolWebView = (WebView)findViewById(R.id.schoolWeatherView);
+        schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.loadUrl("http://users.sch.gr/labrinth/weather/");
     }
 }

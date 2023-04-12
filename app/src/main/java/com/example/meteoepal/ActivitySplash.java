@@ -3,8 +3,6 @@ package com.example.meteoepal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-//import android.support.v7.app.AppCompatActivity;
-import android.os.Looper;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
@@ -15,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ActivitySplash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
@@ -24,7 +22,7 @@ public class ActivitySplash extends AppCompatActivity {
 
         final ImageView splashImage = findViewById(R.id.splashImage);
         splashImage.startAnimation(AnimationUtils.loadAnimation(
-                getApplicationContext(),R.anim.splash_shape
+                getApplicationContext(), R.anim.splash_shape
         ));
         // doumou: The following are for the slide to appear. I don't like it. maybe is unnecessary
 //        new Handler().postDelayed(new Runnable() {
@@ -45,9 +43,9 @@ public class ActivitySplash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ActivitySplash.this,ActivityHome.class));
+                startActivity(new Intent(ActivitySplash.this, ActivityHome.class));
                 finish();
             }
-        },1805);
+        }, 1805);
     }
 }

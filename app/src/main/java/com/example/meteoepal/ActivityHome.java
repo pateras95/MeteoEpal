@@ -6,20 +6,16 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.text.method.LinkMovementMethod;
 import android.util.Pair;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.app.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-//import androidx.room.jarjarred.org.antlr.v4.runtime.misc.Triple;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,7 +28,6 @@ import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.compass.CompassOverlay;
 import org.osmdroid.views.overlay.infowindow.MarkerInfoWindow;
 
-
 import java.util.ArrayList;
 import java.util.Vector;
 
@@ -41,8 +36,9 @@ import java.util.Vector;
 
 public class ActivityHome extends AppCompatActivity {
 
-    private MapView map = null;
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
+    private MapView map = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         overridePendingTransition(0, 0);
@@ -66,11 +62,13 @@ public class ActivityHome extends AppCompatActivity {
                         break;
                     case R.id.home_btn:
                         intent = new Intent(getApplicationContext(), ActivityHome.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                         break;
                     case R.id.info_btn:
                         intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
-                        startActivity(intent);;
+                        startActivity(intent);
+                        ;
                 }
                 return true;
             }
@@ -120,7 +118,7 @@ public class ActivityHome extends AppCompatActivity {
 
     private void setMapPins() {
         Vector<Pair<GeoPoint, SchoolInfo>> geoPoints = new Vector<>();
-        geoPoints.add(new Pair<>(new GeoPoint(38.122276901851336, 23.864931531423043), new SchoolInfo(getString(R.string.dionisos), getString(R.string.dionisosURL),getString(R.string.dionisosPhone))));
+        geoPoints.add(new Pair<>(new GeoPoint(38.122276901851336, 23.864931531423043), new SchoolInfo(getString(R.string.dionisos), getString(R.string.dionisosURL), getString(R.string.dionisosPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(39.6244072151634, 19.91026709786767), new SchoolInfo(getString(R.string.kerkira), getString(R.string.kerkiraURL), getString(R.string.kerkiraPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(38.92042606103356, 22.423592718589948), new SchoolInfo(getString(R.string.lamia), getString(R.string.lamiaURL), getString(R.string.lamiaPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(38.45807095740107, 23.597087048916933), new SchoolInfo(getString(R.string.xalkida), getString(R.string.xalkidaURL), getString(R.string.xalkidaPhone))));
@@ -133,8 +131,7 @@ public class ActivityHome extends AppCompatActivity {
         geoPoints.add(new Pair<>(new GeoPoint(38.952651702649774, 22.121769579540636), new SchoolInfo(getString(R.string.makrakomi), getString(R.string.makrakomiURL), getString(R.string.makrakomiPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(40.741117628421776, 22.936559696451045), new SchoolInfo(getString(R.string.peiramthesallonikis), getString(R.string.peiramthesallonikisURL), getString(R.string.peiramthesallonikisPhone))));
 
-        for (Integer i = 0; i < geoPoints.size(); i++)
-        {
+        for (Integer i = 0; i < geoPoints.size(); i++) {
             Marker startMarker = new Marker(map);
             CustomMarkerInfoWindow customWindow = new CustomMarkerInfoWindow(map, geoPoints.get(i).second.getName(), geoPoints.get(i).second.getLocation(), geoPoints.get(i).second.getTelephone());
             startMarker.setIcon(getDrawable(R.drawable.mappin));
@@ -150,12 +147,14 @@ public class ActivityHome extends AppCompatActivity {
             map.getOverlays().add(startMarker);
         }
     }
-//class not in another file because we need startActivity() for hyperLink
+
+    //class not in another file because we need startActivity() for hyperLink
     public class CustomMarkerInfoWindow extends MarkerInfoWindow {
 
         public String schoolName;
         public String location;
         public String telephone;
+
         public CustomMarkerInfoWindow(MapView mapView, String theSchoolName, String theLocation, String theTelephone) {
             super(R.layout.info_window, mapView);
             this.schoolName = theSchoolName;
@@ -192,6 +191,7 @@ public class ActivityHome extends AppCompatActivity {
                 }
             });
         }
+
         @Override
         public void onClose() {
             super.onClose();

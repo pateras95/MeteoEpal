@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.meteoepal">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:usesCleartextTraffic="true"
         android:icon="@mipmap/app_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/app_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MeteoEpal">
+        android:theme="@style/Theme.MeteoEpal"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".ActivitySplash"
             android:exported="true">
@@ -29,7 +28,7 @@
         <activity android:name=".ActivityHome"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".ActivityAtalanti"></activity>
-        <activity android:name=".ActivityEmyWeather"> </activity>
+        <activity android:name=".ActivityEmyWeather"></activity>
     </application>
 
 </manifest>

@@ -11,11 +11,10 @@
     <string name="makrakomi">ΕΠΑΛ ΜΑΚΡΑΚΩΜΗΣ</string>
     <string name="xalkida">2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ</string>
     <string name="dionisos">1 ΕΠΑΛ ΔΙΟΝΥΣΟΥ</string>
-    <string name="dimhrakleio">15 ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ \n ΗΡΑΚΛΕΙΟΥ</string>
+    <string name="dimhrakleio">15 ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ ΗΡΑΚΛΕΙΟΥ</string>
     <string name="thiba">ΕΠΑΛ ΘΗΒΑΣ</string>
     <string name="kesariani">ΕΠΑΛ ΚΕΣΑΡΙΑΝΗΣ</string>
-    <string name="peiramthesallonikis">ΠΕΙΡΑΜΑΤΙΚΟ ΣΧΟΛΕΙΟ \n ΘΕΣΣΑΛΟΝΙΚΗΣ</string>
-
+    <string name="peiramthesallonikis">ΠΕΙΡΑΜΑΤΙΚΟ ΣΧΟΛΕΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ</string>
 
 
     <string name="atalantiPhone">tel:1</string>
@@ -30,7 +29,6 @@
     <string name="thibaPhone">tel:10</string>
     <string name="kesarianiPhone">tel:11</string>
     <string name="peiramthesallonikisPhone">tel:12</string>
-
 
 
     <string name="atalantiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.653456036158786,+22.99719271998704&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwipl86tsrv9AhWNjaQKHauEBigQ_AUoAnoECAEQBA</string>
@@ -58,6 +56,6 @@
         Ηλεκτρολογίας – Ηλεκτρονικής &amp; Αυτοματισμού,
         Μηχανολογίας Πληροφορικής
 </string>
-    <string name="btns_header">ΣΧΟΛΕΙΑ ΔΙΚΤΥΟΥ ΜΕΤΕΩΡ/ΚΩΝ ΣΤΑΘΜΩΝ</string>
-    <string name="home_header">ΔΙΑΔΡΑΣΤΙΚΟΣ ΧΑΡΤΗΣ ΔΙΚΤΥΟΥ</string>
+    <string name="btns_header">Σχολεία δικτύου Μετεωρολογικών \nσταθμών</string>
+    <string name="home_header">Διαδραστικός χάρτης \nδικτύου</string>
 </resources>
