@@ -4,15 +4,17 @@
         android:id="@+id/weather_btn"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_cloud_24"
-        android:title="@string/weather"/>
+        android:title="@string/weather" />
     <item
         android:id="@+id/home_btn"
         android:enabled="true"
+        android:textStyle="bold"
         android:icon="@drawable/home_icon"
         android:title="@string/home"/>
     <item
         android:id="@+id/info_btn"
         android:enabled="true"
+        android:textStyle="bold"
         android:icon="@drawable/ic_baseline_info_24"
         android:title="@string/info"/>
 </menu>
