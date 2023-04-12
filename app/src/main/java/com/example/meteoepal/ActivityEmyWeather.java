@@ -40,7 +40,7 @@ public class ActivityEmyWeather extends AppCompatActivity {
                         ;
                         break;
                     case R.id.info_btn:
-                        intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
+                        intent = new Intent(getApplicationContext(), ActivityGeneralInfos.class);
                         startActivity(intent);
                         ;
                 }
