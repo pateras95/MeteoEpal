@@ -66,7 +66,7 @@ public class ActivityHome extends AppCompatActivity {
                         ;
                         break;
                     case R.id.info_btn:
-                        intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
+                        intent = new Intent(getApplicationContext(), ActivityGeneralInfos.class);
                         startActivity(intent);
                         ;
                 }
@@ -74,7 +74,6 @@ public class ActivityHome extends AppCompatActivity {
             }
         });
         map.setMultiTouchControls(true);
-//        doumou: The following doesn't look ok on circle map, delete them?
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
         CompassOverlay compassOverlay = new CompassOverlay(this, map);
         compassOverlay.enableCompass();
@@ -88,6 +87,7 @@ public class ActivityHome extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         ArrayList<String> permissionsToRequest = new ArrayList<>();
         for (int i = 0; i < grantResults.length; i++) {
             permissionsToRequest.add(permissions[i]);

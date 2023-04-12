@@ -29,6 +29,10 @@
     <string name="thibaPhone">tel:10</string>
     <string name="kesarianiPhone">tel:11</string>
     <string name="peiramthesallonikisPhone">tel:12</string>
+    <string name="general">
+        Η συγκεκριμένη εφαρμογή του μετεωρολογικού δικτύου σχολείων της χώρας με την ονομασία SCHOOLMETEOGR, αναπτύχθηκε από το 2ο ΕΠΑΛ Χαλκίδας κατά το σχολικό έτος 2022 -23, στα πλαίσια υλοποίησης της Πράξης «Υποστήριξη και Διαχείριση των Σχεδίων Δράσης του έργου «Μια Νέα Αρχή στα ΕΠΑΛ» μέσω του  Επιχειρησιακού Προγράμματος  «ΑΝΑΠΤΥΞΗ ΑΝΘΡΩΠΙΝΟΥ ΔΥΝΑΜΙΚΟΥ, ΕΚΠΑΙΔΕΥΣΗ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗ» με τη συγχρηματοδότηση   της Ελλάδας και της Ευρωπαϊκής Ένωσης.
+        \n\nΤα μετεωρολογικά δεδομένα αντλούνται άμεσα από τους μετεωρολογικούς σταθμούς των σχολείων του δικτύου.
+    </string>
 
 
     <string name="atalantiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.653456036158786,+22.99719271998704&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwipl86tsrv9AhWNjaQKHauEBigQ_AUoAnoECAEQBA</string>
@@ -55,7 +59,7 @@
         Διοίκησης – Οικονομίας,
         Ηλεκτρολογίας – Ηλεκτρονικής &amp; Αυτοματισμού,
         Μηχανολογίας Πληροφορικής
-</string>
-    <string name="btns_header">Σχολεία δικτύου Μετεωρολογικών \nσταθμών</string>
-    <string name="home_header">Διαδραστικός χάρτης \nδικτύου</string>
-</resources>
+    </string>
+        <string name="btns_header">Σχολεία δικτύου Μετεωρολογικών \nσταθμών</string>
+        <string name="home_header">Διαδραστικός χάρτης \nδικτύου</string>
+    </resources>

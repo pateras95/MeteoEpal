@@ -1,5 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">MeteoEpal</string>
+    <string name="tapToClose">Χ Κλείσιμο</string>
+    <string name="callSchool">Επικοινωνία:</string>
     <string name="weather">Kαιρός E.M.Y</string>
     <string name="atalanti">ΕΠΑΛ ΑΤΑΛΑΝΤΗΣ</string>
+    <string name="karpenisi">ΕΠΑΛ ΚΑΡΠΕΝΗΣΙΟΥ</string>
+    <string name="karistos">ΕΠΑΛ ΚΑΡΥΣΤΟΥ</string>
+    <string name="kerkira">1 ΕΠΑΛ ΚΕΡΚΥΡΑΣ</string>
+    <string name="lamia">1 ΕΠΑΛ ΛΑΜΙΑΣ</string>
+    <string name="makrakomi">ΕΠΑΛ ΜΑΚΡΑΚΩΜΗΣ</string>
+    <string name="xalkida">2 ΕΠΑΛ ΧΑΛΚΙΔΑΣ</string>
+    <string name="dionisos">1 ΕΠΑΛ ΔΙΟΝΥΣΟΥ</string>
+    <string name="dimhrakleio">15 ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ ΗΡΑΚΛΕΙΟΥ</string>
+    <string name="thiba">ΕΠΑΛ ΘΗΒΑΣ</string>
+    <string name="kesariani">ΕΠΑΛ ΚΕΣΑΡΙΑΝΗΣ</string>
+    <string name="peiramthesallonikis">ΠΕΙΡΑΜΑΤΙΚΟ ΣΧΟΛΕΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ</string>
+
+
+    <string name="atalantiPhone">tel:1</string>
+    <string name="karpenisiPhone">tel:2</string>
+    <string name="karistosPhone">tel:3</string>
+    <string name="kerkiraPhone">tel:4</string>
+    <string name="lamiaPhone">tel:5</string>
+    <string name="makrakomiPhone">tel:6</string>
+    <string name="xalkidaPhone">tel:7</string>
+    <string name="dionisosPhone">tel:8</string>
+    <string name="dimhrakleioPhone">tel:9</string>
+    <string name="thibaPhone">tel:10</string>
+    <string name="kesarianiPhone">tel:11</string>
+    <string name="peiramthesallonikisPhone">tel:12</string>
+    <string name="general">
+        Η συγκεκριμένη εφαρμογή του μετεωρολογικού δικτύου σχολείων της χώρας με την ονομασία SCHOOLMETEOGR, αναπτύχθηκε από το 2ο ΕΠΑΛ Χαλκίδας κατά το σχολικό έτος 2022 -23, στα πλαίσια υλοποίησης της Πράξης «Υποστήριξη και Διαχείριση των Σχεδίων Δράσης του έργου «Μια Νέα Αρχή στα ΕΠΑΛ» μέσω του  Επιχειρησιακού Προγράμματος  «ΑΝΑΠΤΥΞΗ ΑΝΘΡΩΠΙΝΟΥ ΔΥΝΑΜΙΚΟΥ, ΕΚΠΑΙΔΕΥΣΗ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗ» με τη συγχρηματοδότηση   της Ελλάδας και της Ευρωπαϊκής Ένωσης.
+        \n\nΤα μετεωρολογικά δεδομένα αντλούνται άμεσα από τους μετεωρολογικούς σταθμούς των σχολείων του δικτύου.
+    </string>
+
+
+    <string name="atalantiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.653456036158786,+22.99719271998704&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwipl86tsrv9AhWNjaQKHauEBigQ_AUoAnoECAEQBA</string>
+    <string name="karpenisiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.91454545946067,+21.78850553003706&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiElu_Msrv9AhWH2qQKHd5CAA8Q_AUoAnoECAIQBA</string>
+    <string name="karistosURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.02207991394976,+24.42263701299908&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjkkLXasrv9AhUrsKQKHQvwC-gQ_AUoAnoECAEQBA</string>
+    <string name="kerkiraURL">https://www.google.com/maps?client=firefox-b-d&amp;q=39.6244072151634,+19.91026709786767&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiBmOH6sbv9AhUrMuwKHbraAL4Q_AUoAnoECAEQBA</string>
+    <string name="lamiaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.92042606103356,+22.423592718589948&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiS9ZiEsrv9AhVnMOwKHa35DKUQ_AUoAnoECAEQBA</string>
+    <string name="makrakomiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.952651702649774,+22.121769579540636&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjBzM3psrv9AhUssKQKHe0NAZUQ_AUoAnoECAEQBA</string>
+    <string name="xalkidaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.45807095740107,+23.597087048916933&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjim9GRsrv9AhWYtKQKHYw4DpYQ_AUoAnoECAEQBA</string>
+    <string name="dionisosURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.122276901851336,+23.864931531423043&amp;dlnr=1&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi6womer7v9AhVeiP0HHSn_D6kQ_AUoAnoECAEQBA</string>
+    <string name="dimhrakleioURL">https://www.google.com/maps?client=firefox-b-d&amp;q=35.3226004214979,+25.125163545979387&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiZs-ydsrv9AhWLOewKHcjhBxEQ_AUoAnoECAEQBA</string>
+    <string name="thibaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.329990782307505,+23.336070776829448&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwil0O-2srv9AhUMjqQKHbn3AVwQ_AUoAnoECAEQBA</string>
+    <string name="kesarianiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=37.965796476805586,+23.757893708772837&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi7kYXEsrv9AhUNwAIHHRgzBvcQ_AUoAnoECAEQBA</string>
+    <string name="peiramthesallonikisURL">https://www.google.com/maps?client=firefox-b-d&amp;q=40.741117628421776,+22.936559696451045&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjG44X2srv9AhWZ_7sIHZsdD4wQ_AUoAnoECAIQBA</string>
+
+    <string name="home">Αρχική</string>
+    <string name="info">Πληροφορίες</string>
+    <string name="atalantiText">
+        <b> Το Επαγγελματικό Λύκειο (ΕΠΑ.Λ.) Αταλάντης είναι  το μοναδικό Επαγγελματικό Λύκειο της Περιοχής Λοκρίδας του Νομού Φθιώτιδας. Στο σχολείο κάθε χρόνο φοιτούν περίπου 190
+        μαθητές οι οποίοι προέρχονται από τους Δήμους Λοκρών,  Αμφίκλειας – Ελάτειας και Καμένων Βούρλων. Στο σχολείο υπηρετούν 34 εκπαιδευτικοί.\n
+        \nΠαρέχει στους μαθητές που ολοκληρώνουν με επιτυχία τις σπουδές τους Απολυτήριο Λυκείου και Πτυχίο Ειδικότητας.
+        Στο σχολείο είναι εγκεκριμένοι και λειτουργούν   στη  Β΄ τάξη 5  τομείς:</b>
+        Γεωπονίας Τροφίμων &amp; Περιβάλλοντος,
+        Διοίκησης – Οικονομίας,
+        Ηλεκτρολογίας – Ηλεκτρονικής &amp; Αυτοματισμού,
+        Μηχανολογίας Πληροφορικής
+</string>
+    <string name="btns_header">Σχολεία δικτύου Μετεωρολογικών \nσταθμών</string>
+    <string name="home_header">Διαδραστικός χάρτης \nδικτύου</string>
 </resources>

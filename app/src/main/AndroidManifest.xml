@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MeteoEpal"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ActivityGeneralInfos"
+            android:exported="false" />
+        <activity
             android:name=".ActivitySplash"
             android:exported="true">
             <intent-filter>
@@ -25,10 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityHome"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ActivityAtalanti"></activity>
-        <activity android:name=".ActivityEmyWeather"></activity>
+        <activity android:name=".ActivityHome" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ActivityAtalanti" />
+        <activity android:name=".ActivityEmyWeather" />
     </application>
 
 </manifest>
