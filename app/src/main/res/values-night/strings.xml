@@ -18,18 +18,19 @@
     <string name="nigritas">ΕΠΑΛ ΝΙΓΡΙΤΑΣ</string>
 
 
-    <string name="atalantiPhone">tel:1</string>
-    <string name="karpenisiPhone">tel:2</string>
-    <string name="karistosPhone">tel:3</string>
-    <string name="kerkiraPhone">tel:4</string>
-    <string name="lamiaPhone">tel:5</string>
-    <string name="makrakomiPhone">tel:6</string>
-    <string name="xalkidaPhone">tel:7</string>
-    <string name="dionisosPhone">tel:8</string>
-    <string name="dimhrakleioPhone">tel:9</string>
-    <string name="thibaPhone">tel:10</string>
-    <string name="kesarianiPhone">tel:11</string>
-    <string name="peiramthesallonikisPhone">tel:12</string>
+    <string name="atalantiPhone">tel:2233022161</string>
+    <string name="karpenisiPhone">tel:2237023130</string>
+    <string name="karistosPhone">tel:2224023240</string>
+    <string name="kerkiraPhone">tel:2661035211</string>
+    <string name="lamiaPhone">tel:2231052893</string>
+    <string name="makrakomiPhone">tel:2236022343</string>
+    <string name="xalkidaPhone">tel:2221078691</string>
+    <string name="dionisosPhone">tel:2310267433</string>
+    <string name="dimhrakleioPhone">tel:2810252903</string>
+    <string name="thibaPhone">tel:2262027893</string>
+    <string name="kesarianiPhone">tel:2107669943</string>
+    <string name="peiramthesallonikisPhone">tel:2310267433</string>
+    <string name="nigritasPhone">tel:2322020000</string>
     <string name="general">Η συγκεκριμένη εφαρμογή του μετεωρολογικού δικτύου σχολείων της χώρας με την ονομασία SCHOOLMETEOGR, αναπτύχθηκε από το 2ο ΕΠΑΛ Χαλκίδας κατά το σχολικό έτος 2022 -23, στα πλαίσια υλοποίησης της Πράξης «Υποστήριξη και Διαχείριση των Σχεδίων Δράσης του έργου «Μια Νέα Αρχή στα ΕΠΑΛ» μέσω του  Επιχειρησιακού Προγράμματος  «ΑΝΑΠΤΥΞΗ ΑΝΘΡΩΠΙΝΟΥ ΔΥΝΑΜΙΚΟΥ, ΕΚΠΑΙΔΕΥΣΗ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗ» με τη συγχρηματοδότηση   της Ελλάδας και της Ευρωπαϊκής Ένωσης.
         \n\nΤα μετεωρολογικά δεδομένα αντλούνται άμεσα από τους μετεωρολογικούς σταθμούς των σχολείων του δικτύου.
     </string>
@@ -47,7 +48,7 @@
     <string name="thibaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.329990782307505,+23.336070776829448&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwil0O-2srv9AhUMjqQKHbn3AVwQ_AUoAnoECAEQBA</string>
     <string name="kesarianiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=37.965796476805586,+23.757893708772837&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi7kYXEsrv9AhUNwAIHHRgzBvcQ_AUoAnoECAEQBA</string>
     <string name="peiramthesallonikisURL">https://www.google.com/maps?client=firefox-b-d&amp;q=40.741117628421776,+22.936559696451045&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjG44X2srv9AhWZ_7sIHZsdD4wQ_AUoAnoECAIQBA</string>
-
+    <string name="nigritasURL">https://www.google.com/maps/place/%CE%95%CE%A0%CE%91%CE%9B+%CE%9D%CE%99%CE%93%CE%A1%CE%99%CE%A4%CE%91%CE%A3/@40.9086054,23.5008042,17z/data=!4m6!3m5!1s0x14a90ee7c717659b:0xc23b2b71043e8c83!8m2!3d40.9086054!4d23.5033899!16s%2Fg%2F11c5h3w8cq</string>
     <string name="home">Αρχική</string>
     <string name="info">Πληροφορίες</string>
     <string name="atalantiText">Το Επαγγελματικό Λύκειο (ΕΠΑ.Λ.) Αταλάντης είναι  το μοναδικό Επαγγελματικό Λύκειο της Περιοχής Λοκρίδας του Νομού Φθιώτιδας.

@@ -212,6 +212,7 @@ public class ActivityHome extends AppCompatActivity {
         geoPoints.add(new Pair<>(new GeoPoint(38.02207991394976, 24.42263701299908), new SchoolInfo(getString(R.string.karistos), getString(R.string.karistosURL), getString(R.string.karistosPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(38.952651702649774, 22.121769579540636), new SchoolInfo(getString(R.string.makrakomi), getString(R.string.makrakomiURL), getString(R.string.makrakomiPhone))));
         geoPoints.add(new Pair<>(new GeoPoint(40.741117628421776, 22.936559696451045), new SchoolInfo(getString(R.string.peiramthesallonikis), getString(R.string.peiramthesallonikisURL), getString(R.string.peiramthesallonikisPhone))));
+        geoPoints.add(new Pair<>(new GeoPoint(40.908633758609255, 23.503164592470405), new SchoolInfo(getString(R.string.nigritas), getString(R.string.nigritasURL), getString(R.string.nigritasPhone))));
 
         for (Integer i = 0; i < geoPoints.size(); i++) {
             Marker startMarker = new Marker(map);
