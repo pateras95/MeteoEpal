@@ -48,6 +48,7 @@
     <string name="thibaURL">https://www.google.com/maps?client=firefox-b-d&amp;q=38.329990782307505,+23.336070776829448&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwil0O-2srv9AhUMjqQKHbn3AVwQ_AUoAnoECAEQBA</string>
     <string name="kesarianiURL">https://www.google.com/maps?client=firefox-b-d&amp;q=37.965796476805586,+23.757893708772837&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwi7kYXEsrv9AhUNwAIHHRgzBvcQ_AUoAnoECAEQBA</string>
     <string name="peiramthesallonikisURL">https://www.google.com/maps?client=firefox-b-d&amp;q=40.741117628421776,+22.936559696451045&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjG44X2srv9AhWZ_7sIHZsdD4wQ_AUoAnoECAIQBA</string>
+    <string name="nigritasURL">https://www.google.com/maps/place/%CE%95%CE%A0%CE%91%CE%9B+%CE%9D%CE%99%CE%93%CE%A1%CE%99%CE%A4%CE%91%CE%A3/@40.9086054,23.5008042,17z/data=!4m6!3m5!1s0x14a90ee7c717659b:0xc23b2b71043e8c83!8m2!3d40.9086054!4d23.5033899!16s%2Fg%2F11c5h3w8cq</string>
 
     <string name="home">Αρχική</string>
     <string name="info">Πληροφορίες</string>
