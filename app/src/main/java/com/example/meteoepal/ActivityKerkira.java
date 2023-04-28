@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,13 +15,13 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-
 public class ActivityKerkira extends AppCompatActivity {
-    String url1 = "https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200-1.png";
-    String url2 = "https://qphs.fs.quoracdn.net/main-qimg-8e203d34a6a56345f86f1a92570557ba.webp";
-    String url3 = "https://bizzbucket.co/wp-content/uploads/2020/08/Life-in-The-Metro-Blog-Title-22.png";
+    String url1 = "https://drive.google.com/uc?export=view&id=1ynul8AX-8tGU-QH2pFAceXKwJtY8Btra";
+    String url2 = "https://drive.google.com/uc?export=view&id=182dcISDA22d8OaLIrfIByPd8zArGafny";
+    String url3 = "https://drive.google.com/uc?export=view&id=10xgQcuFX5Nkyfr-L8KPX_66UbHYo0nth";
 
     private TextView schoolName;
+    private TextView schoolInfo;
     private WebView schoolWebView;
 
     @Override
@@ -45,7 +46,7 @@ public class ActivityKerkira extends AppCompatActivity {
                         ;
                         break;
                     case R.id.info_btn:
-                        intent = new Intent(getApplicationContext(), ActivityKerkira.class);
+                        intent = new Intent(getApplicationContext(), ActivityGeneralInfos.class);
                         startActivity(intent);
                         ;
                 }
@@ -65,10 +66,14 @@ public class ActivityKerkira extends AppCompatActivity {
         sliderView.setAutoCycle(true);
         sliderView.startAutoCycle();
 
-        schoolName = (TextView) findViewById(R.id.schoolName);
-        schoolName.setText("Επάλ Αταλάντης");
+        schoolName = (TextView)findViewById(R.id.schoolName);
+        schoolName.setText(R.string.kerkira);
+
+        schoolInfo = (TextView)findViewById(R.id.scrolltext);
+        schoolInfo.setText(R.string.kerkiraText);
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
-        schoolWebView.loadUrl("http://users.sch.gr/labrinth/weather/");
+        schoolWebView.setWebViewClient(new WebViewClient());
+        schoolWebView.loadUrl("https://1epal-kerkyr.ker.sch.gr/pwsWD/index.php?units=metric");
     }
 }

@@ -15,10 +15,10 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class ActivityLamia extends AppCompatActivity {
-    String url1 = "https://drive.google.com/uc?export=view&id=1E_BN_SU8AU4LgZA7z21am3rCCWh_5RF7";
-    String url2 = "https://drive.google.com/uc?export=view&id=1hrwq-xbQgFaeV-5J8PJm3CyfRjM1WUzI";
-    String url3 = "https://drive.google.com/uc?export=view&id=1fkOKwt0Y6E6qHnOT3dpL6d08l-OsI6tV";
+public class ActivityKaristos extends AppCompatActivity {
+    String url1 = "https://drive.google.com/uc?export=view&id=1sPZqvKUgZzZ-mQPEB4NSMF8J2i0i7Hyz";
+    String url2 = "https://drive.google.com/uc?export=view&id=1oFccfk18dliu2fuA81CPQb722aQxV_WW";
+    String url3 = "https://drive.google.com/uc?export=view&id=17yUgv0Ohitvk7dm54O2_zdye0N6oON8o";
 
     private TextView schoolName;
     private TextView schoolInfo;
@@ -67,13 +67,13 @@ public class ActivityLamia extends AppCompatActivity {
         sliderView.startAutoCycle();
 
         schoolName = (TextView)findViewById(R.id.schoolName);
-        schoolName.setText(R.string.lamia);
+        schoolName.setText(R.string.karistos);
 
         schoolInfo = (TextView)findViewById(R.id.scrolltext);
-        schoolInfo.setText(R.string.lamiaText);
+        schoolInfo.setText(R.string.karistosText);
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/stkontos/weather/");
+        schoolWebView.loadUrl("https://www.meteocam.gr/karpenissi/index.html");
     }
 }

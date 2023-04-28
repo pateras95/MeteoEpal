@@ -15,10 +15,9 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class ActivityLamia extends AppCompatActivity {
-    String url1 = "https://drive.google.com/uc?export=view&id=1E_BN_SU8AU4LgZA7z21am3rCCWh_5RF7";
-    String url2 = "https://drive.google.com/uc?export=view&id=1hrwq-xbQgFaeV-5J8PJm3CyfRjM1WUzI";
-    String url3 = "https://drive.google.com/uc?export=view&id=1fkOKwt0Y6E6qHnOT3dpL6d08l-OsI6tV";
+public class ActivityMakrakomi extends AppCompatActivity {
+    String url1 = "https://drive.google.com/uc?export=view&id=1Q0jFBlowVeFj87sXL8opMZZ2Ya6THDoF";
+    String url2 = "https://drive.google.com/uc?export=view&id=1f2fQUv54Y2410jcdrVJnD_1Msx1y3Zx1";
 
     private TextView schoolName;
     private TextView schoolInfo;
@@ -58,7 +57,6 @@ public class ActivityLamia extends AppCompatActivity {
         SliderView sliderView = findViewById(R.id.slider);
         sliderDataArrayList.add(new SliderData(url1));
         sliderDataArrayList.add(new SliderData(url2));
-        sliderDataArrayList.add(new SliderData(url3));
         SliderAdapter adapter = new SliderAdapter(this, sliderDataArrayList);
         sliderView.setAutoCycleDirection(SliderView.LAYOUT_DIRECTION_LTR);
         sliderView.setSliderAdapter(adapter);
@@ -67,13 +65,13 @@ public class ActivityLamia extends AppCompatActivity {
         sliderView.startAutoCycle();
 
         schoolName = (TextView)findViewById(R.id.schoolName);
-        schoolName.setText(R.string.lamia);
+        schoolName.setText(R.string.kerkira);
 
         schoolInfo = (TextView)findViewById(R.id.scrolltext);
-        schoolInfo.setText(R.string.lamiaText);
+        schoolInfo.setText(R.string.kerkiraText);
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/stkontos/weather/");
+        schoolWebView.loadUrl("https://www.meteocam.gr/makrakomi/index.html");
     }
 }

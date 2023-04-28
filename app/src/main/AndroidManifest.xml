@@ -34,7 +34,11 @@
         <activity android:name=".ActivityThessaloniki" />
         <activity android:name=".ActivityDimHrakleio" />
         <activity android:name=".ActivityKarpenisi" />
+        <activity android:name=".ActivityMakrakomi" />
+        <activity android:name=".ActivityLamia" />
         <activity android:name="ActivityKesariani" />
+        <activity android:name=".ActivityKaristos" />
+        <activity android:name=".ActivityKerkira" />
         <activity android:name="ActivityThiba" />
         <activity android:name=".ActivityEmyWeather" />
     </application>

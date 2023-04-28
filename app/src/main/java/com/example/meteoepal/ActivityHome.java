@@ -39,7 +39,7 @@ public class ActivityHome extends AppCompatActivity {
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MapView map = null;
     private Button atalantiBtn, thessalonikiBtn, dimhrakleioBtn, kesarianiBtn, thibaBtn,
-                    karpenisiBtn;
+                    karpenisiBtn, karistosBtn, kerkiraBtn, makrakomiBtn, lamiaBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,6 +130,38 @@ public class ActivityHome extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ActivityHome.this, ActivityKarpenisi.class));
+            }
+        });
+
+        karistosBtn = (Button)findViewById(R.id.buttonKaristos);
+        karistosBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityKaristos.class));
+            }
+        });
+
+        kerkiraBtn = (Button)findViewById(R.id.buttonKerkira);
+        kerkiraBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityKerkira.class));
+            }
+        });
+
+        makrakomiBtn = (Button)findViewById(R.id.buttonMarakomi);
+        makrakomiBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityMakrakomi.class));
+            }
+        });
+
+        lamiaBtn = (Button)findViewById(R.id.buttonLamia);
+        lamiaBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityLamia.class));
             }
         });
     }
