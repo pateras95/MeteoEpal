@@ -33,7 +33,9 @@
         <activity android:name=".ActivityAtalanti" />
         <activity android:name=".ActivityThessaloniki" />
         <activity android:name=".ActivityDimHrakleio" />
+        <activity android:name=".ActivityKarpenisi" />
         <activity android:name="ActivityKesariani" />
+        <activity android:name="ActivityThiba" />
         <activity android:name=".ActivityEmyWeather" />
     </application>
 

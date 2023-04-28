@@ -38,7 +38,8 @@ public class ActivityHome extends AppCompatActivity {
 
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MapView map = null;
-    private Button atalantiBtn, thessalonikiBtn, dimhrakleioBtn, kesarianiBtn;
+    private Button atalantiBtn, thessalonikiBtn, dimhrakleioBtn, kesarianiBtn, thibaBtn,
+                    karpenisiBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,6 +114,22 @@ public class ActivityHome extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ActivityHome.this, ActivityKesariani.class));
+            }
+        });
+
+        thibaBtn = (Button)findViewById(R.id.buttonThiba);
+        thibaBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityThiba.class));
+            }
+        });
+
+        karpenisiBtn = (Button)findViewById(R.id.buttonKarpenisi);
+        karpenisiBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityKarpenisi.class));
             }
         });
     }
