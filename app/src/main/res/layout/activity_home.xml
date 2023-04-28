@@ -58,7 +58,7 @@
         android:textStyle="bold" />
 
     <ScrollView
-        android:id="@id/scroll"
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_above="@id/bottom_navigation"

@@ -15,13 +15,19 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-
-public class ActivityAtalanti extends AppCompatActivity {
-    String url1 = "https://drive.google.com/uc?export=view&id=1a75w8Ivt4bt5YyXqxaiT70YlOnzTqsqY";
-    String url2 = "https://drive.google.com/uc?export=view&id=1RiJWqvGGUuxI3hy8hNPaPYt6SD9snv1g";
-    String url3 = "https://drive.google.com/uc?export=view&id=1RiJWqvGGUuxI3hy8hNPaPYt6SD9snv1g";
+public class ActivityThessaloniki extends AppCompatActivity {
+    String url1 = "https://drive.google.com/uc?export=view&id=1dq8yoCkQClmP57NqhfEmystbBraRZTe3";
+    String url2 = "https://drive.google.com/uc?export=view&id=1yMFXR9J1j-9z0tgc-8J7mP0NL7Oy1Ip2";
+    String url3 = "https://drive.google.com/uc?export=view&id=1ySd4DeICKfiznmpdbtc4MLHFte8J-AUH";
+    String url4 = "https://drive.google.com/uc?export=view&id=1U0iLBGhrRPZN6weNtRpUBGtKucv7jYWx";
+    String url5 = "https://drive.google.com/uc?export=view&id=17XQ77nrF6oHZxSpRerWufpEQeXrtkSC2";
+    String url6 = "https://drive.google.com/uc?export=view&id=1yg8X-dH7eH1V94DJNvphIBSUIqkXO035";
+    String url7 = "https://drive.google.com/uc?export=view&id=1vgwqFE6X4WPto2Dgcp8Nyi2TNzmPIBzC";
+    String url8 = "https://drive.google.com/uc?export=view&id=1TCI7hI0NDr5HBGUXFRkVyOvpiT-GGfZ4";
+    String url9 = "https://drive.google.com/uc?export=view&id=1VN4XEreFO7Vv4tU1tCOoOx5syRLl6-S2";
 
     private TextView schoolName;
+    private TextView schoolInfo;
     private WebView schoolWebView;
 
     @Override
@@ -46,7 +52,7 @@ public class ActivityAtalanti extends AppCompatActivity {
                         ;
                         break;
                     case R.id.info_btn:
-                        intent = new Intent(getApplicationContext(), ActivityAtalanti.class);
+                        intent = new Intent(getApplicationContext(), ActivityGeneralInfos.class);
                         startActivity(intent);
                         ;
                 }
@@ -59,6 +65,12 @@ public class ActivityAtalanti extends AppCompatActivity {
         sliderDataArrayList.add(new SliderData(url1));
         sliderDataArrayList.add(new SliderData(url2));
         sliderDataArrayList.add(new SliderData(url3));
+        sliderDataArrayList.add(new SliderData(url4));
+        sliderDataArrayList.add(new SliderData(url5));
+        sliderDataArrayList.add(new SliderData(url6));
+        sliderDataArrayList.add(new SliderData(url7));
+        sliderDataArrayList.add(new SliderData(url8));
+        sliderDataArrayList.add(new SliderData(url9));
         SliderAdapter adapter = new SliderAdapter(this, sliderDataArrayList);
         sliderView.setAutoCycleDirection(SliderView.LAYOUT_DIRECTION_LTR);
         sliderView.setSliderAdapter(adapter);
@@ -67,10 +79,13 @@ public class ActivityAtalanti extends AppCompatActivity {
         sliderView.startAutoCycle();
 
         schoolName = (TextView)findViewById(R.id.schoolName);
-        schoolName.setText("Επάλ Αταλάντης");
+        schoolName.setText(R.string.peiramthesallonikis);
+
+        schoolInfo = (TextView)findViewById(R.id.scrolltext);
+        schoolInfo.setText(R.string.peiramatikoThessalonikiText);
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/labrinth/weather/");
+        schoolWebView.loadUrl("https://thingspeak.com/channels/1010145");
     }
 }

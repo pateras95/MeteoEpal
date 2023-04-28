@@ -38,6 +38,7 @@ public class ActivityHome extends AppCompatActivity {
 
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MapView map = null;
+    private Button atalantiBtn, thessalonikiBtn, dimhrakleioBtn, kesarianiBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,38 @@ public class ActivityHome extends AppCompatActivity {
         GeoPoint MapCenterPointOnStart = new GeoPoint(38.83438097933947, 21.774962757282207);
         setMapPins();
         map.getController().setCenter(MapCenterPointOnStart);
+
+        atalantiBtn = (Button)findViewById(R.id.buttonAtalanti);
+        atalantiBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityAtalanti.class));
+            }
+        });
+
+        thessalonikiBtn = (Button)findViewById(R.id.buttonThessaloniki);
+        thessalonikiBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityThessaloniki.class));
+            }
+        });
+
+        dimhrakleioBtn = (Button)findViewById(R.id.buttonKriti);
+        dimhrakleioBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityDimHrakleio.class));
+            }
+        });
+
+        kesarianiBtn = (Button)findViewById(R.id.buttonKesariani);
+        kesarianiBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityKesariani.class));
+            }
+        });
     }
 
 
