@@ -35,7 +35,10 @@
         <activity android:name=".ActivityDimHrakleio" />
         <activity android:name=".ActivityKarpenisi" />
         <activity android:name=".ActivityMakrakomi" />
+        <activity android:name=".ActivityNigritas"/>
         <activity android:name=".ActivityLamia" />
+        <activity android:name=".ActivityDionisos"/>
+        <activity android:name=".ActivityXalkidas" />
         <activity android:name="ActivityKesariani" />
         <activity android:name=".ActivityKaristos" />
         <activity android:name=".ActivityKerkira" />

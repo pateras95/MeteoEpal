@@ -39,7 +39,8 @@ public class ActivityHome extends AppCompatActivity {
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MapView map = null;
     private Button atalantiBtn, thessalonikiBtn, dimhrakleioBtn, kesarianiBtn, thibaBtn,
-                    karpenisiBtn, karistosBtn, kerkiraBtn, makrakomiBtn, lamiaBtn;
+                    karpenisiBtn, karistosBtn, kerkiraBtn, makrakomiBtn, lamiaBtn , nigritaBtn,
+                        xalkidaBtn, dionisosBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +163,30 @@ public class ActivityHome extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ActivityHome.this, ActivityLamia.class));
+            }
+        });
+
+        nigritaBtn = (Button)findViewById(R.id.buttonNigritas);
+        nigritaBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityNigritas.class));
+            }
+        });
+
+        xalkidaBtn = (Button)findViewById(R.id.buttonXalkida);
+        xalkidaBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityXalkidas.class));
+            }
+        });
+
+        dionisosBtn = (Button)findViewById(R.id.buttonDionisos);
+        dionisosBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityHome.this, ActivityDionisos.class));
             }
         });
     }

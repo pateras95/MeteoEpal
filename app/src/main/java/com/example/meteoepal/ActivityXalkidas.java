@@ -15,7 +15,7 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class ActivityDionisos extends AppCompatActivity {
+public class ActivityXalkidas extends AppCompatActivity {
     String url1 = "https://drive.google.com/uc?export=view&id=16GFthCU16q4LHt9nXpFJvxLHt3tS4nhM";
     String url2 = "https://drive.google.com/uc?export=view&id=1ThlLTrwr2lkdEGV1UtaahC61oC339PRs";
 
@@ -65,13 +65,13 @@ public class ActivityDionisos extends AppCompatActivity {
         sliderView.startAutoCycle();
 
         schoolName = (TextView)findViewById(R.id.schoolName);
-        schoolName.setText(R.string.dionisos);
+        schoolName.setText(R.string.xalkida);
 
         schoolInfo = (TextView)findViewById(R.id.scrolltext);
-        schoolInfo.setText(R.string.dionisosText);
+        schoolInfo.setText(R.string.xalkidaText);
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://www.emy.gr/emy/el/");
+        schoolWebView.loadUrl("http://users.sch.gr/achalik/weather/");
     }
 }
