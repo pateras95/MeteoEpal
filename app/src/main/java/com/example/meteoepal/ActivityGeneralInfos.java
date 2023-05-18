@@ -18,6 +18,11 @@ public class ActivityGeneralInfos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general_infos);
         String imageUrl = "https://drive.google.com/uc?export=view&id=1RiJWqvGGUuxI3hy8hNPaPYt6SD9snv1g";
+        String imageUrlSchool = "https://drive.google.com/uc?export=view&id=1kxCPqtJtXo1le8vsefduPbGZZhrQIej6";
+
+        ImageView imageViewSchool = findViewById(R.id.schoolLogo);
+        Glide.with(this).load(imageUrlSchool).into(imageViewSchool);
+
         ImageView imageView = findViewById(R.id.imageAsset);
         Glide.with(this).load(imageUrl).into(imageView);
 

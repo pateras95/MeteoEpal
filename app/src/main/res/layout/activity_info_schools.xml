@@ -61,9 +61,10 @@
                 android:layout_marginBottom="5dp"
                 android:text="@string/atalantiText"
                 android:textColor="@color/secondary"
-                android:textSize="15dp" />
+                android:textSize="15dp"/>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewWeather"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/scrolltext"
@@ -78,6 +79,47 @@
                     android:layout_height="wrap_content"
                     android:nestedScrollingEnabled="true" />
             </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonWeb"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardViewWeather"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:height="50dp"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="Σύνδεσμος Μετερορολογικού Σταθμού"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="Σύνδεσμος Μετερορολογικού Σταθμού"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/buttonWeb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="17dp"
+                android:text="Στην περίπτωση που η προβολή πληροφοριών ή βίντεο δεν λειτουργεί σωστά στην embeded ιστοσελίδα, παρακαλώ μεταβείτε στον εξωτερικό σύνδεσμο με το κουμπί από πάνω."
+                android:textAlignment="center"
+                android:textColor="#E64B0E"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                tools:layout_below="@id/buttonWeb" />
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 

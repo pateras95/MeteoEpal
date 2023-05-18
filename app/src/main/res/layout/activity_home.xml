@@ -72,52 +72,6 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/buttonKriti"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="17dp"
-                android:layout_marginBottom="10dp"
-                android:height="50dp"
-                android:background="@drawable/home_school_buttons_o2"
-                android:contentDescription="@string/app_name"
-                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:text="@string/dimhrakleio"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/btnTextColor"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:ignore="DuplicateSpeakableTextCheck" />
-
-
-            <Button
-                android:id="@+id/buttonThessaloniki"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="17dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/home_school_buttons_o2"
-                android:contentDescription="@string/app_name"
-                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:text="@string/peiramthesallonikis"
-                android:textAlignment="textStart"
-                android:textColor="@color/btnTextColor"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:ignore="DuplicateSpeakableTextCheck" />
-
-            <Button
                 android:id="@+id/buttonKesariani"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
@@ -285,6 +239,7 @@
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/home_school_buttons_o2"
                 android:contentDescription="@string/app_name"
@@ -370,6 +325,51 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/buttonThessaloniki"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/peiramthesallonikis"
+                android:textAlignment="textStart"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/buttonKriti"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                android:height="50dp"
+                android:background="@drawable/home_school_buttons_o2"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/dimhrakleio"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/btnTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
     </ScrollView>
 

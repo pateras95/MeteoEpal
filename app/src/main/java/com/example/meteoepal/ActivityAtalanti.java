@@ -1,10 +1,13 @@
 package com.example.meteoepal;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,12 +20,13 @@ import java.util.ArrayList;
 
 
 public class ActivityAtalanti extends AppCompatActivity {
-    String url1 = "https://drive.google.com/uc?export=view&id=1a75w8Ivt4bt5YyXqxaiT70YlOnzTqsqY";
-    String url2 = "https://drive.google.com/uc?export=view&id=1RiJWqvGGUuxI3hy8hNPaPYt6SD9snv1g";
-    String url3 = "https://drive.google.com/uc?export=view&id=1RiJWqvGGUuxI3hy8hNPaPYt6SD9snv1g";
+    String url1 = "https://drive.google.com/uc?export=view&id=19la_e8zrFSGaSTbmPxbTy5LXfDKhNaTC";
+    String url2 = "https://drive.google.com/uc?export=view&id=15l4q1EcBlzk6Vcu35m_LAu8rws1XyKfO";
 
     private TextView schoolName;
     private WebView schoolWebView;
+
+    private Button webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +62,6 @@ public class ActivityAtalanti extends AppCompatActivity {
         SliderView sliderView = findViewById(R.id.slider);
         sliderDataArrayList.add(new SliderData(url1));
         sliderDataArrayList.add(new SliderData(url2));
-        sliderDataArrayList.add(new SliderData(url3));
         SliderAdapter adapter = new SliderAdapter(this, sliderDataArrayList);
         sliderView.setAutoCycleDirection(SliderView.LAYOUT_DIRECTION_LTR);
         sliderView.setSliderAdapter(adapter);
@@ -72,5 +75,14 @@ public class ActivityAtalanti extends AppCompatActivity {
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
         schoolWebView.loadUrl("http://users.sch.gr/labrinth/weather/");
+
+        webView = (Button)findViewById(R.id.buttonWeb);
+        webView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://users.sch.gr/labrinth/weather/"));
+                startActivity(browserIntent);
+            }
+        });
     }
 }

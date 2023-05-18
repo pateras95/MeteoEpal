@@ -1,10 +1,13 @@
 package com.example.meteoepal;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,6 +26,8 @@ public class ActivityKarpenisi extends AppCompatActivity {
     private TextView schoolName;
     private TextView schoolInfo;
     private WebView schoolWebView;
+
+    private Button webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,5 +80,14 @@ public class ActivityKarpenisi extends AppCompatActivity {
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
         schoolWebView.loadUrl("https://www.meteocam.gr/karpenissi/index.html");
+
+        webView = (Button)findViewById(R.id.buttonWeb);
+        webView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meteocam.gr/karpenissi/index.html"));
+                startActivity(browserIntent);
+            }
+        });
     }
 }

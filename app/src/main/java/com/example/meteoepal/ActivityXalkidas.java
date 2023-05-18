@@ -1,10 +1,13 @@
 package com.example.meteoepal;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,10 +21,16 @@ import java.util.ArrayList;
 public class ActivityXalkidas extends AppCompatActivity {
     String url1 = "https://drive.google.com/uc?export=view&id=16GFthCU16q4LHt9nXpFJvxLHt3tS4nhM";
     String url2 = "https://drive.google.com/uc?export=view&id=1ThlLTrwr2lkdEGV1UtaahC61oC339PRs";
+    String url3 = "https://drive.google.com/uc?export=view&id=15RwDh6LSxcQZPJi_wU9Udk9V-jWPjNeD";
+    String url4 = "https://drive.google.com/uc?export=view&id=1XJaZpNSw8mN1KpX1pDr99GKm1CFi8d5E";
+    String url5 = "https://drive.google.com/uc?export=view&id=1YGhYF4VKGPgFk-7z03-YnHU5w1dUOASn";
+    String url6 = "https://drive.google.com/uc?export=view&id=1-pyg1TNQtGO6sYieKn0dO-xemoMWACXo";
 
     private TextView schoolName;
     private TextView schoolInfo;
     private WebView schoolWebView;
+
+    private Button webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +66,10 @@ public class ActivityXalkidas extends AppCompatActivity {
         SliderView sliderView = findViewById(R.id.slider);
         sliderDataArrayList.add(new SliderData(url1));
         sliderDataArrayList.add(new SliderData(url2));
+        sliderDataArrayList.add(new SliderData(url3));
+        sliderDataArrayList.add(new SliderData(url4));
+        sliderDataArrayList.add(new SliderData(url5));
+        sliderDataArrayList.add(new SliderData(url6));
         SliderAdapter adapter = new SliderAdapter(this, sliderDataArrayList);
         sliderView.setAutoCycleDirection(SliderView.LAYOUT_DIRECTION_LTR);
         sliderView.setSliderAdapter(adapter);
@@ -73,5 +86,14 @@ public class ActivityXalkidas extends AppCompatActivity {
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
         schoolWebView.loadUrl("http://users.sch.gr/achalik/weather/");
+
+        webView = (Button)findViewById(R.id.buttonWeb);
+        webView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://users.sch.gr/achalik/weather/"));
+                startActivity(browserIntent);
+            }
+        });
     }
 }
