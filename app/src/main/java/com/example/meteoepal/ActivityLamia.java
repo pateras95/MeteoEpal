@@ -79,13 +79,13 @@ public class ActivityLamia extends AppCompatActivity {
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/stkontos/weather/");
+        schoolWebView.loadUrl("https://www.meteocam.gr/epal/lamia/");
 
         webView = (Button)findViewById(R.id.buttonWeb);
         webView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://users.sch.gr/stkontos/weather/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meteocam.gr/epal/lamia/"));
                 startActivity(browserIntent);
             }
         });

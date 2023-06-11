@@ -85,13 +85,13 @@ public class ActivityXalkidas extends AppCompatActivity {
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/achalik/weather/");
+        schoolWebView.loadUrl("https://www.meteocam.gr/epal/chalkida/");
 
         webView = (Button)findViewById(R.id.buttonWeb);
         webView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://users.sch.gr/achalik/weather/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meteocam.gr/epal/chalkida/"));
                 startActivity(browserIntent);
             }
         });

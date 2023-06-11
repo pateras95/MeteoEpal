@@ -75,13 +75,13 @@ public class ActivityDionisos extends AppCompatActivity {
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("http://users.sch.gr/koutroumpas/Weather/?fbclid=IwAR0yDyElbG6q28k_aCtLJYAT3e44hWc14X3ZbTSfWdy-U0NMDQsCNLVLtrQ");
+        schoolWebView.loadUrl("https://www.meteocam.gr/epal/dionysos/");
 
         webView = (Button)findViewById(R.id.buttonWeb);
         webView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://users.sch.gr/koutroumpas/Weather/?fbclid=IwAR0yDyElbG6q28k_aCtLJYAT3e44hWc14X3ZbTSfWdy-U0NMDQsCNLVLtrQ"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meteocam.gr/epal/dionysos/"));
                 startActivity(browserIntent);
             }
         });

@@ -75,13 +75,13 @@ public class ActivityDimHrakleio extends AppCompatActivity {
 
         schoolWebView = (WebView) findViewById(R.id.schoolWeatherView);
         schoolWebView.setWebViewClient(new WebViewClient());
-        schoolWebView.loadUrl("https://app.weathercloud.net/d9826641620#profile");
+        schoolWebView.loadUrl("https://app.weathercloud.net/map#9826641620");
 
         webView = (Button)findViewById(R.id.buttonWeb);
         webView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://app.weathercloud.net/d9826641620#profile"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://app.weathercloud.net/map#9826641620"));
                 startActivity(browserIntent);
             }
         });
